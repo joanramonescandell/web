@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Styling for each product item */
+.producto-item {
+    position: relative;  /* Required for the absolute positioning of .price */
+    border: 1px solid #e0e0e0;  /* A subtle border */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* A light shadow for depth */
+    padding: 10px;  /* Some internal padding */
+    background-color: #ffffff;  /* A white background */
+    border-radius: 5px;  /* Rounded corners */
+    text-align: center;  /* Center the content */
+    transition: transform 0.2s;  /* Smooth transition for hover effect */
+}
+
+.producto-item:hover {
+    transform: scale(1.02);  /* Slightly enlarge the product on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* A deeper shadow on hover */
+}
+
+.producto-item img {
+    max-width: 90%;  /* Ensuring the image isn't too large */
+    margin: 0 auto;  /* Center the image horizontally */
+    display: block;  /* This helps with centering */
+}
+
+.producto-item h3 {
+    margin-top: 10px;  /* Some space above the title */
+    font-size: 18px;  /* A suitable font size for the title */
+    color: #333;  /* A darker text color for the title */
+}
+
+.price {
+    color: black; /*color for the price */
+    font-weight: bold;  /* Bold font for price */
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para la galería de productos */
+.producto-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Tres imágenes por fila */
+    gap: 20px;  /* Espacio entre las imágenes */
+}
+

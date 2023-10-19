@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    background-color: #333;
+    background-image: url('../view/images/headerImagen.png');
+    color: #fff;
+}
+
+
+header img {
+    width: 90px;
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+nav {
+    margin: 20px 0;
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+nav ul li img {
+    width: 25px; /* Puedes ajustar este valor a tu gusto */
+    height: auto;
+    margin-right: 5px; /* Añade un pequeño margen para separar el ícono del texto del enlace, si lo hay */
+    vertical-align: middle; /* Esto asegura que la imagen se alinee verticalmente con el texto */
+}
+
+nav li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(173, 216, 230);
+    box-shadow: #212037;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(173, 216, 230, 0.5);
+    color: black;
+    margin-top: 20px;
+}
